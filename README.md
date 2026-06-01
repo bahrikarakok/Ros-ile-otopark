@@ -1,4 +1,5 @@
 <img width="940" height="572" alt="otoparkresim" src="https://github.com/user-attachments/assets/a9f2c3d6-57ec-48ed-88d4-4732b2ce2d1e" />
+<img width="1429" height="579" alt="image" src="https://github.com/user-attachments/assets/8d1b33c3-29f9-4780-aa90-a184702554ab" />
 
 # ROS Destekli Akıllı Otopark Simülasyon Sistemi 🚗🅿️
 
