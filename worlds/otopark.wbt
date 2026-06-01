@@ -1,0 +1,183 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/apartment_structure/protos/Wall.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/traffic/protos/ParkingLines.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/vehicles/protos/bmw/BmwX5Simple.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/vehicles/protos/tesla/TeslaModel3.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/vehicles/protos/citroen/CitroenCZero.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.34364097336627997 0.035682335784270276 0.9384229602566503 2.947329853240244
+  position 7.422263212804266 4.109659900424767 6.850549695235971
+}
+ParkingLines {
+  translation -2 5 0
+}
+TexturedBackground {
+}
+Wall {
+  translation 0 10 0
+  size 20 0.2 1
+}
+Wall {
+  translation 0 -10 0
+  name "wall(1)"
+  size 20 0.2 1
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 20 20
+}
+E-puck {
+  hidden position_0_0 -3.100672683038593e-08
+  hidden position_0_1 -3.10067562736549e-08
+  hidden rotation_1 0 -1 0 2.9802322387695313e-08
+  hidden rotation_2 0 -1 0 2.9802322387695313e-08
+  translation 7.999999999900766 -2.9999999999822333 -6.395228984118831e-05
+  rotation 0.9862565591275203 -0.16522106007540316 2.9757421793436495e-05 2.477337877584807e-09
+  controller "epuck_surucu"
+}
+Solid {
+  translation -0.932226 9.05988 5.18201e-22
+  rotation 0 0 1 -1.5707953071795862
+  children [
+    Shape {
+    }
+    BmwX5Simple {
+      translation 0.26 0 0.4
+      rotation 0 1 0 4.692820414042842e-06
+    }
+  ]
+  name "solid(1)"
+}
+TeslaModel3 {
+  hidden position_0_0 -3.853117312087103e-06
+  hidden position2_0_0 0.5846709584743013
+  hidden position_0_1 4.4748869041288516e-06
+  hidden position2_0_1 0.6524559064823714
+  hidden position_0_2 9.521852488650063e-05
+  hidden position_0_3 -0.00013191387998881358
+  hidden rotation_1 0.9201258510550095 -0.2769174107825465 0.27692086563815443 1.6539460030274853
+  hidden rotation_2 0.9020676807297612 0.30518150043820985 -0.30518543735426296 1.6736812483551584
+  hidden rotation_3 0.9999999977333573 -4.760927792977472e-05 4.760926237130818e-05 1.5707960022666427
+  hidden rotation_4 0.9999999956496808 -6.595696135751272e-05 6.595693980311763e-05 1.570796004350318
+  translation 6.288917472258736 -8.917394018093347 -0.022855474401180017
+  rotation 0.00761835801442337 -0.007611916117977377 0.9999420079955521 1.5716807525896954
+  name "vehicle(1)"
+}
+TeslaModel3 {
+  hidden position_0_0 -3.853607716833195e-06
+  hidden position2_0_0 0.5846108939873402
+  hidden position_0_1 4.474602571779932e-06
+  hidden position2_0_1 0.6523784245950798
+  hidden position_0_2 9.509306433631615e-05
+  hidden position_0_3 -0.00013096874838841962
+  hidden rotation_1 0.9201412079782502 -0.27689189572653916 0.27689535110089863 1.6539293708143785
+  hidden rotation_2 0.9020891236676021 0.3051498077489327 -0.30515374451480515 1.6736576031448032
+  hidden rotation_3 0.9999999977393266 -4.754654763446655e-05 4.754653209649995e-05 1.5707960022606737
+  hidden rotation_4 0.9999999957117953 -6.548439540696586e-05 6.54843740070029e-05 1.5707960042882032
+  translation -0.6883029985330867 -8.894565757942217 -0.022856635798860953
+  rotation 0.007618782258213727 -0.007612576628078619 0.9999419997349764 1.57163189328547
+}
+Wall {
+  translation -10 0 0
+  name "wall(2)"
+  size 1 20 1
+}
+Wall {
+  translation 10 0 0
+  name "wall(3)"
+  size 1 20 1
+}
+ParkingLines {
+  translation -2 -10 0
+}
+Robot {
+  children [
+    DistanceSensor {
+      translation -0.74 7.9 2
+      rotation 1 0 0 7.33682e-06
+      name "sensor_slot1"
+    }
+    DistanceSensor {
+      translation 1.6 5 2
+      rotation 1 0 0 1.5708
+      name "sensor_slot2"
+    }
+    DistanceSensor {
+      translation 4 5 2
+      rotation 1 0 0 1.5708
+      name "sensor_slot3"
+    }
+    DistanceSensor {
+      translation 6.4 5 2
+      rotation 1 0 0 1.5708
+      name "sensor_slot4"
+    }
+    DistanceSensor {
+      translation 8.8 5 2
+      rotation 1 0 0 1.5708
+      name "sensor_slot5"
+    }
+    DistanceSensor {
+      translation -0.8 -10 2
+      rotation 1 0 0 1.5708
+      name "sensor_slot6"
+    }
+    DistanceSensor {
+      translation 1.6 -10 2
+      rotation 1 0 0 1.5708
+      name "sensor_slot7"
+    }
+    DistanceSensor {
+      translation 4 -10 2
+      rotation 1 0 0 1.5708
+      name "sensor_slot8"
+    }
+    DistanceSensor {
+      translation 6.4 -10 2
+      rotation 1 0 0 1.5708
+      name "sensor_slot9"
+    }
+    DistanceSensor {
+      translation 8.8 -10 2
+      rotation 1 0 0 1.5708
+      name "sensor_slot10"
+    }
+  ]
+  controller "c_otopark_manager"
+}
+Solid {
+  translation 6.30346 8.88235 5.18201e-22
+  rotation 0 0 1 -1.5707953071795862
+  children [
+    Shape {
+    }
+    BmwX5Simple {
+      translation 0.26 0 0.4
+      rotation 0 1 0 4.692820414042842e-06
+    }
+  ]
+}
+CitroenCZero {
+  hidden position_0_0 4.97534773091531e-09
+  hidden position2_0_0 0.0036851086775031255
+  hidden position_0_1 4.994444630209338e-09
+  hidden position2_0_1 0.0037125905660136327
+  hidden position_0_2 -8.835850158131821e-07
+  hidden position_0_3 9.042809042295381e-07
+  hidden rotation_1 -2.487673865455388e-09 -0.9999999999990886 -1.3501208609767885e-06 0.00368510867748011
+  hidden rotation_2 2.497222315102409e-09 0.9999999999990952 -1.3452705879424703e-06 0.0037125905659765378
+  hidden rotation_3 0 1 0 8.835772919877597e-07
+  hidden rotation_4 0 1 0 9.044403377469568e-07
+  translation 4.074522171048621 8.58959915968265 -0.0009040580279318644
+  rotation -0.004492432108938864 -0.005300107438641481 -0.9999758631661494 1.570815210212139
+  name "vehicle(2)"
+}
