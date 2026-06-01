@@ -1,3 +1,5 @@
+<img width="940" height="572" alt="otoparkresim" src="https://github.com/user-attachments/assets/a9f2c3d6-57ec-48ed-88d4-4732b2ce2d1e" />
+
 # ROS Destekli Akıllı Otopark Simülasyon Sistemi 🚗🅿️
 
 Bu proje, **Webots R2025a** simülasyon ortamı üzerinde geliştirilmiş, mesafe sensörleri ile donatılmış anlık doluluk tespiti yapabilen akıllı bir otopark yönetim sistemidir. İlk aşamada sistemin maksimum kararlılıkta çalışması amacıyla Webots'un yerel C API'si kullanılarak bir üst akıl (`Supervisor`) mimarisi inşa edilmiştir. İlerleyen aşamalarda bu verilerin robotik işletim sistemi (ROS) mimarisine aktarılması planlanmaktadır.
